@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/image-removebg-preview 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset-leo.css">
+    <link rel="stylesheet" href="css/style-leo.css">
+    <link rel="stylesheet" href="css/responsive-leo.css">
+    <link rel="stylesheet" href="css/gustavo.css">
+    <script defer src="js/script-leo.js" ></script>
+    <title>Praiagens</title>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+</head>
+<body>
+    <header class="desktop-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div id="logo-nav">
+                <img src="img/image-removebg-preview 1.png" alt="Logo Praiagens">
+                <p>Praiagens</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pacotes.html">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pacotes.html">Promoções</a>
+                    </li>
+                </ul>
+                <div id="nav-buttons">
+                    <div class="noturno">
+                        <div class="noturno-escolha">
+                        </div>
+                    </div>
+                        <a href="login.html">Entrar</a>
+                        <a href="cadastro.html"><button>Cadastro</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <header class="mobile-header">
+        <nav class="navbar navbar-light bg-light">
+            <div id="logo-nav">
+                <img src="img/image-removebg-preview 1.png" alt="">
+                <p>Praiagens</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavMobile">
+                <button class="close-menu" type="button" data-toggle="collapse" data-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="true" aria-label="Toggle navigation">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div id="nav-buttons">
+                    <button class="btn btn-outline-dark">Entre ou Cadastre</button>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pacotes.html">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promoções</a>
+                    </li>
+                </ul>
+                <div id="ajuda-mobile">
+                    <h3 class="titulo-2">Ajuda</h3>
+                    <ul>
+                        <li><img src="img/icones-responsivo-nav/prancheta 1.png" alt=""> Como remarcar o voo?</li>
+                        <li><img src="img/icones-responsivo-nav/carteira 1.png" alt=""> Como fazer check-in?</li>
+                        <li><img src="img/icones-responsivo-nav/forma-de-pagamento 1.png" alt=""> Tem reembolso?</li>
+                        <li><img src="img/icones-responsivo-nav/pergunta-para-fazer-login-em-circulos 1.png" alt=""> Outras dúvidas</li>
+                    </ul>
+                </div>                
+            </div>
+        </nav>
+    </header>    
+    
+    <main> <!-- Início do conteúdo principal-->
+        <section id="parte-um"><!--hero-->
+            <div id="hero-container">
+                <div class="hero-grid">
+                    <div class="item-hero">
+                        <img src="img/praia1.png" alt="Casal feliz na praia"/>
+                    </div>
+                    <div class="item-hero">
+                        <img src="img/praia2.png" alt="Casal feliz na praia"/>
+                    </div>
+                    <div class="item-hero terceira">
+                        <img src="img/praia3.png" alt="Casal feliz na praia"/>
+                    </div>
+                </div>
+                <div id="hero-text">
+                    <span>Venha conhecer as</span></br>
+                    <span class="titulo-azul">melhores praias </span><span>do</span><br>
+                    <span>Brasil</span>
+                    <p>Descubra a magia das praias brasileiras.</br>Onde cada onda é uma história.</p>
+                    <a href="pacotes.html" class="botao" id="botao">Conhecer</a>
+                </div>
+            </div>
+        </section><!--fim hero-->
+        <section id="barra-pesquisa"><!--Barra de pesquisa-->
+            <div id="search-navbar">
+                <div id="search-box">
+                    <input type="text" class="search-txt" placeholder="Pesquise sua viagem aqui">
+                    <a href="sobre.html">
+                        <i class="fas fa-search"></i>
+                        <img src="img/search (1) 1.png" alt="lupa" height="20" width="20">
+                    </a>
+                </div>
+            </div> 
+        </section> <!--Fim barra de pesquisa-->
+        <section id="parte-dois">
+            <div>
+                <h1>Destinos Favoritos</h1>
+                <p>Mais comprados pelos clientes Praiando</p>
+            </div>
+            <div>
+                <a href="pacotes.html" id="veja-mais">Veja mais destinos aqui →</a>
+            </div>
+        </section>
+
+        <section id="destinos-favoritos"><!---Galeria de Destinos--->
+
+            <a href="viagensSolo.html"><div class="cards-destaques">
+                <img src="img/destaque1 (1).jpg" alt="Praia do Farol" class="img-destaque">
+                <h3>Praia do Farol</h3>
+                <div>
+                    <img src="img/pin 1.png" alt="localização" class="pin">
+                    <span>Rio de Janeiro</span>
+                </div>  
+            </div></a>
+
+            <a href="#"><div class="cards-destaques">
+                <img src="img/destaque2.jpg" alt="Baía do Sansho" class="img-destaque">
+                <h3>Baía do Sancho</h3>
+                <div>
+                    <img src="img/pin 1.png" alt="localização" class="pin">
+                    <span>Pernambuco</span>
+                </div>  
+            </div></a>
+
+            <a href="Praia-da-Rosa.html"><div class="cards-destaques">
+                <img src="img/destaque3.jpg" alt="Praia da Rosa" class="img-destaque">
+                <h3>Praia da Rosa</h3>
+                <div>
+                    <img src="img/pin 1.png" alt="localização" class="pin">
+                    <span>Santa Catarina</span>
+                </div>  
+            </div></a>
+
+            <a href=""><div class="cards-destaques">
+                <img src="img/destaque4.jpg" alt="Praia de Jericoacoara" class="img-destaque">
+                <h3>Praia de Jericoacoara</h3>
+                <div>
+                    <img src="img/pin 1.png" alt="localização" class="pin">
+                    <span>Ceará</span>
+                </div>  
+            </div></a>
+        </section>
+
+        <section id="parte-tres">
+            <span class="titulo-azul">Ondas </span><span>de Lembrança</span>
+            <p>Encontre viagens adequados a seu estilo de vida</p>
+        </section>
+
+        <section id="selos">
+            <div>
+                <div>
+                    <img src="img/selo1.png" alt="" class="selos">
+                </div>
+                <div>
+                    <h4>Acessibilidade na Praia</h4>
+                    <p>Encontre aqui hotéis exclusivos e guias<br>turísticos preparados. </p>
+                </div>
+                <div>
+                    <img src="img/02.png" alt="" class="selos">
+                </div>
+                <div>
+                    <h4>Natureza com Viagens à Praia</h4>
+                    <p>Você pode explorar a tela inimitável da<br>Natureza nas belas praias.</p>
+                </div>
+                <div>
+                    <img src="img/03.png" alt="" class="selos">
+                </div>
+                <div>
+                    <h4>Reacenda o paladar</h4>
+                    <p>Existem diversas razões para amar viajar,<br>um delas é a comida gostosa!</p>
+                </div>
+                <div>
+                    <a href="pacotes.html" class="botao">Explore aqui</a>
+                </div>
+            </div>
+            <div>
+                <img src="img/praia4.png" alt="Casal feliz na praia" id="img04">
+            </div>
+        </section>
+    </main>
+    <main>
+        <section class="secao-pacotes">
+            <div class="container-title-pacotes">
+                <div>
+                    <h2 class="title-pacotes">Pacotes para a <span class="blue-color">Praia</span></h2>
+                    <p class="description-title-pacotes">Venha se aventurar com a gente!</p>
+                </div>
+                <a href="#">O Brasil tem a segunda melhor praia do mundo de acordo com ranking;</a>
+            </div>
+            <div class="container-pacotes">
+                <div class="card-pacote">
+                    <div class="box-img-pacote">
+                        <div class="box-nota-pacote"><img src="img/image-leo/star-icon.png"
+                                alt="icon star para indicar a nota do pacote" class="icon-star">
+                            <p>4.9</p>
+                        </div>
+                        <div class="box-img-praia">
+                            <img src="img/image-leo/img-praia-farol.png" alt="Imagem da Praia do Farol no Rio de Janeiro"
+                                title="Praia do Farol">
+                        </div>
+                    </div>
+                    <div class="box-description-pacote">
+                        <div class="box-text-pacote">
+                            <h3>Praia do Farol</h3>
+                            <div><img src="img/image-leo/localization-icon.png" alt="Icone de localização">
+                                <p>Rio de Janeiro</p>
+                            </div>
+                        </div>
+                        <p class="valor-pacote">R$150</p>
+                    </div>
+                </div>
+                <div class="card-pacote">
+                    <div class="box-img-pacote">
+                        <div class="box-nota-pacote"><img src="img/image-leo/star-icon.png"
+                                alt="icon star para indicar a nota do pacote" class="icon-star">
+                            <p>4.9</p>
+                        </div>
+                        <div class="box-img-praia">
+                            <img src="img/image-leo/img-praia-baia.png"
+                                alt="Imagem da Praia do Baía do Sancho no Pernambuco" title="Praia do Baía do Sancho">
+                        </div>
+                    </div>
+                    <div class="box-description-pacote">
+                        <div class="box-text-pacote">
+                            <h3>Baía do Sancho</h3>
+                            <div><img src="img/image-leo/localization-icon.png" alt="Icone de localização">
+                                <p>Pernambuco</p>
+                            </div>
+                        </div>
+                        <p class="valor-pacote">R$150</p>
+                    </div>
+                </div>
+                <div class="card-pacote">
+                    <div class="box-img-pacote">
+                        <div class="box-nota-pacote"><img src="img/image-leo/star-icon.png"
+                                alt="icon star para indicar a nota do pacote" class="icon-star">
+                            <p>4.9</p>
+                        </div>
+                        <div class="box-img-praia">
+                            <img src="img/image-leo/img-praiaRosa.png" alt="Imagem da Praia do Rosa em Santa Catarina"
+                                title="Praia do Rosa">
+                        </div>
+                    </div>
+                    <div class="box-description-pacote">
+                        <div class="box-text-pacote">
+                            <h3>Praia do Rosa</h3>
+                            <div><img src="img/image-leo/localization-icon.png" alt="Icone de localização">
+                                <p>Santa Catarina</p>
+                            </div>
+                        </div>
+                        <p class="valor-pacote">R$150</p>
+                    </div>
+                </div>
+                <!--Segundo tole de praia-->
+                <div class="card-pacote">
+                    <div class="box-img-pacote">
+                        <div class="box-nota-pacote"><img src="img/image-leo/star-icon.png"
+                                alt="icon star para indicar a nota do pacote" class="icon-star">
+                            <p>4.9</p>
+                        </div>
+                        <div class="box-img-praia">
+                            <img src="img/image-leo/img-praiaPajuçara..png" alt="Imagem da Praia da Pajuçara em Alagoas"
+                                title="Praia da Pajuçara">
+                        </div>
+                    </div>
+                    <div class="box-description-pacote">
+                        <div class="box-text-pacote">
+                            <h3>Praia da Pajuçara</h3>
+                            <div><img src="img/image-leo/localization-icon.png" alt="Icone de localização">
+                                <p>Alagoas</p>
+                            </div>
+                        </div>
+                        <p class="valor-pacote">R$150</p>
+                    </div>
+                </div>
+                <div class="card-pacote">
+                    <div class="box-img-pacote">
+                        <div class="box-nota-pacote"><img src="img/image-leo/star-icon.png"
+                                alt="icon star para indicar a nota do pacote" class="icon-star">
+                            <p>4.9</p>
+                        </div>
+                        <div class="box-img-praia">
+                            <img src="img/image-leo/img-praiaMaresias.png" alt="Imagem da Praia de Maresias em São Paulo"
+                                title="Praia de Maresias">
+                        </div>
+                    </div>
+                    <div class="box-description-pacote">
+                        <div class="box-text-pacote">
+                            <h3>Praia de Maresias</h3>
+                            <div><img src="img/image-leo/localization-icon.png" alt="Icone de localização">
+                                <p>São Paulo</p>
+                            </div>
+                        </div>
+                        <p class="valor-pacote">R$150</p>
+                    </div>
+                </div>
+                <div class="card-pacote">
+                    <div class="box-img-pacote">
+                        <div class="box-nota-pacote"><img src="img/image-leo/star-icon.png"
+                                alt="icon star para indicar a nota do pacote" class="icon-star">
+                            <p>4.9</p>
+                        </div>
+                        <div class="box-img-praia">
+                            <img src="img/image-leo/img-praiaEspelho.png" alt="Imagem da Praia do Espelho na Bahia"
+                                tietle="Praia do Espelho">
+                        </div>
+                    </div>
+                    <div class="box-description-pacote">
+                        <div class="box-text-pacote">
+                            <h3>Praia do Espelho</h3>
+                            <div><img src="img/image-leo/localization-icon.png" alt="Icone de localização">
+                                <p>Bahia</p>
+                            </div>
+                        </div>
+                        <p class="valor-pacote">R$150</p>
+                    </div>
+                </div>
+            </div>
+            <a href="pacotes.html" id="mostrar-mais-leo">Mostra mais </a>
+        </section>
+        <div class="scroller" data-speed="fast">
+            <div class="scroller" data-direction="right" data-speed="slow">
+                <div class="scroller__inner">
+                    <img src="img/image-leo/logo-banco-pan.png" alt="Logo do Banco Pan" title="Banco Pan">
+                    <img src="img/image-leo/logo-trivago.png" alt="Logo do Trivago" title="Trivago">
+                    <img src="img/image-leo/logo-proa.png" alt="Logo do Proa" title="Proa">
+                    <img src="img/image-leo/logo-booking.png" alt="Logo da Brooking.com" title="Brooking.com">
+                </div>
+            </div>
+        </div>
+        <section class="container-vr">
+            <div class="box-vr-title">
+                <h2>Tenha uma experiência imersiva!</h2>
+                <button>Clique aqui</button>
+            </div>
+            <div class="box-video-vr">
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/37PORy1KIN8?si=x7yRyVPpUXtz7pm9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <hr class="gray-line">
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <img class="logo-img" src="img/icones-footer/image-removebg-preview(2).png" alt="">
+        <p>Senac Lapa Tito, São Paulo - SP</p>
+
+        <div class="social-icons">
+          <img src="img/icones-footer/facebook 1.png" alt="">
+          <img src="img/icones-footer/social-media 1.png" alt="">
+          <img src="img/icones-footer/yaotube 1.png" alt="">
+        </div>
+      </div>
+      
+      <div class="footer-content">
+        <h4>Privacidade</h4>
+        <li><a href="#">Termos de uso</a></li>
+        <li><a href="#">Políticas de Privacidade</a></li>
+        <li><a href="#">Cookies</a></li>
+      </div>
+
+      <div class="footer-content">
+        <h4>Serviços</h4>
+          <li><a href="#">Passagens</a></li>
+          <li><a href="#">Pacotes</a></li>
+          <li><a href="#">Promoções</a></li>
+      </div>
+
+      <div class="footer-content">
+        <h4>Suporte</h4>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">FAQ - Perguntas <br> Frequentes</a></li>
+          <li><a href="#">Contato</a></li>
+      </div>
+
+      <div class="footer-content">
+        <h4>Cliente</h4>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Cadastro</a></li>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

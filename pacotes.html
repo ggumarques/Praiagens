@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/image-removebg-preview 1.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pacotes.css">
+    <title>Pacotes</title>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</head>
+
+<body class="pagina">
+
+    <header class="desktop-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div id="logo-nav">
+                <img src="img/image-removebg-preview 1.png" alt="">
+                <p>Praiagens</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pacotes.html">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pacotes.html">Promoções</a>
+                    </li>
+                </ul>
+                <div id="nav-buttons">
+                    <a href="login.html">Entrar</a>
+                    <a href="cadastro.html"><button>Cadastro</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <header class="mobile-header">
+        <nav class="navbar navbar-light bg-light">
+            <div id="logo-nav">
+                <img src="img/image-removebg-preview 1.png" alt="">
+                <p>Praiagens</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavMobile"
+                aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavMobile">
+                <button class="close-menu" type="button" data-toggle="collapse" data-target="#navbarNavMobile"
+                    aria-controls="navbarNavMobile" aria-expanded="true" aria-label="Toggle navigation">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div id="nav-buttons">
+                    <button class="btn btn-outline-dark">Entre ou Cadastre</button>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pacotes.html">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pacotes.html">Promoções</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="noturno">
+                            <div class="noturno-escolha">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div id="ajuda-mobile">
+                    <h3 class="titulo-2">Ajuda</h3>
+                    <ul>
+                        <li><img src="img/icones-responsivo-nav/prancheta 1.png" alt=""> Como remarcar o voo?</li>
+                        <li><img src="img/icones-responsivo-nav/carteira 1.png" alt=""> Como fazer check-in?</li>
+                        <li><img src="img/icones-responsivo-nav/forma-de-pagamento 1.png" alt=""> Tem reembolso?</li>
+                        <li><img src="img/icones-responsivo-nav/pergunta-para-fazer-login-em-circulos 1.png" alt="">
+                            Outras dúvidas</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="container-titulo">
+            <h1 class="titulo-1">Pacotes de viagem</h1>
+            <h2 class="subtitulo">Todos hotéis ja estão com o preço da passagem incluso</h2>
+            <div class="container-btn-filtro">
+                <button class="btn-filtro" id="ida-volta">Ida e volta</button>
+                <button class="btn-filtro" id="apenas-ida">Apenas ida</button>
+            </div>
+
+            <input type="text" class="search" id="search" onkeyup="search()" placeholder="Buscar">
+            <i class="fa-solid fa-magnifying-glass lupa"></i>
+        </div>
+    </section>
+
+    <main class="conteudo">
+
+        <div class="nofound error" id="nofound">
+            <img src="img/curiosity search-bro.svg" alt="">
+            <h1 class="titulo-2">Ops!</h1>
+            <h2 class="subtitulo-3">Pesquisa não encontrada.</h2>
+        </div>
+
+        <section class="pacotes">
+            <div class="header-pacote">
+                <h1 class="titulo-2">Conheça as melhores praias do <span class="estado">Rio de Janeiro</span></h1>
+
+            </div>
+            <div class="container-pacotes">
+
+
+
+
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/Paraia-de-COPAGABANA-rio-janeiro.jpeg" alt="">
+                    </div>
+
+                    <div class="card-info ">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                50% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card ">
+                            <h1 class="titulo-4 ">Pacote para Copacabana</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Ida e volta</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 599,00</span>
+                                <a href="hotel-carrinho.html"><button class="btn-comprar">Comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/praia-da-Joatinga-Rio-de-janeiro.jpeg" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                40% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card">
+                            <h1 class="titulo-4">Pacote para Joatinga</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Apenas ida</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 499,90</span>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/praia-do-arpoador-rio-de-janeiro.jpeg" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                35% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card">
+                            <h1 class="titulo-4">Pacote para Apoador</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Apenas ida</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 399,90</span>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/vista-praia-na-barra-da-tijuca-rio-de-janeiro.jpeg" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                40% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card">
+                            <h1 class="titulo-4">Pacote para Barra da Tijuca</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Apenas ida</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 600,00</span>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pacotes">
+            <div class="header-pacote">
+                <h1 class="titulo-2">Conheça as melhores praias de <span class="estado">São Paulo</span></h1>
+            </div>
+            <div class="container-pacotes">
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/carro-em-ubatuba.jpg" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                40% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card">
+                            <h1 class="titulo-4">Pacote para Ubatuba</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Ida e volta</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 630,00</span>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/santos-praia-São-paulo.jpe" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                40% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card">
+                            <h1 class="titulo-4">Pacote para Santos</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Apenas ida</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 300,00</span>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/Juquehy-O-que-Fazer-Praias-Capa-são-paulo.jpeg" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                30% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card">
+                            <h1 class="titulo-4">Pacote para Juquehy</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Apenas ida</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 300,00</span>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/praia-do-jabaquara-ilhabela-são-paulo.jpeg" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                60% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card">
+                            <h1 class="titulo-4">Pacote para Jabaquara</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Apenas ida</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 500,00</span>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pacotes">
+            <div class="header-pacote">
+                <h1 class="titulo-2">Conheça as melhores praias da <span class="estado">Bahia</span></h1>
+            </div>
+            <div class="container-pacotes">
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/praia-do-satu-caraiva-bahia.jpeg" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                30% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card">
+                            <h1 class="titulo-4">Pacote para Satucaraiva</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Ida e volta</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 400,00</span>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/praia-dos-coqueiros-bahia.jpeg" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                60% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card">
+                            <h1 class="titulo-4">Pacote para Coqueiros</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Ida e ida</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 450,00</span>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/Prainha de são josé-bahia.jpeg" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                60% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card">
+                            <h1 class="titulo-4">Pacote para São José</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Apenas ida</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 319,90</span>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-pacote">
+                    <div class="card-img">
+                        <img src="img/forte.jpg" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <div class="oferta">
+                            <span class="subtitulo-2">
+                                35% Desconto
+                            </span>
+                        </div>
+                        <div class="titulo-card">
+                            <h1 class="titulo-4">Pacote para Praia do Forte</h1>
+                            <div class="voo-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <h2 class="subtitulo-2" id="voo-info" id="voo-info">Ida e volta</h2>
+                            </div>
+                        </div>
+
+
+<div class="formulario"></div>
+                        <div class="voo-info">
+                            <div class="preco-confirm">
+                                <span class="preco">R$ 340,00</span>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+          <img class="logo-img" src="img/icones-footer/image-removebg-preview(2).png" alt="">
+          <p>Senac Lapa Tito, São Paulo - SP</p>
+  
+          <div class="social-icons">
+            <img src="img/icones-footer/facebook 1.png" alt="">
+            <img src="img/icones-footer/social-media 1.png" alt="">
+            <img src="img/icones-footer/yaotube 1.png" alt="">
+          </div>
+        </div>
+        
+        <div class="footer-content">
+          <h4>Privacidade</h4>
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Políticas de Privacidade</a></li>
+          <li><a href="#">Cookies</a></li>
+        </div>
+  
+        <div class="footer-content">
+          <h4>Serviços</h4>
+            <li><a href="#">Passagens</a></li>
+            <li><a href="#">Pacotes</a></li>
+            <li><a href="#">Promoções</a></li>
+        </div>
+  
+        <div class="footer-content">
+          <h4>Suporte</h4>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">FAQ - Perguntas <br> Frequentes</a></li>
+            <li><a href="#">Contato</a></li>
+        </div>
+  
+        <div class="footer-content">
+          <h4>Cliente</h4>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Cadastro</a></li>
+        </div>
+      </footer>
+    <script src="js/search.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/modo-noturno.js"></script>
+</body>
+
+</html>
